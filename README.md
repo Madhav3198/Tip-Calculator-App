@@ -18,8 +18,8 @@ I have added a screenshots of the desktop screen and mobile screen from 375px to
 
 ### Links
 
-- Solution URL: (https://your-solution-url.com)
-- Live Site URL: (https://your-live-site-url.com)
+- Solution URL: (https://github.com/Madhav3198/Tip-Calculator-App)
+- Live Site URL: (https://unrivaled-sprinkles-4e12d2.netlify.app/)
 
 
 ### Built with
