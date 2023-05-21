@@ -1,0 +1,443 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+}
+
+$Very-dark-cyan: hsl(183, 100%, 15%);
+$error-red: hsl(10, 50%, 63.9%);
+$dark-cyan: hsl(183, 79%, 24%);
+$Strong-cyan: hsl(172, 67%, 45%);
+$Cyan: hsl(173, 61.3%, 76.7%);
+$Dark-grayish-cyan: hsl(186, 14%, 43%);
+$Grayish-cyan: hsl(184, 14%, 56%);
+$Light-Grayish-cyan: hsl(185, 41%, 84%);
+$Very-Light-Grayish-cyan: hsl(189, 41%, 97%);
+$White: hsl(0, 0%, 100%);
+
+@mixin center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@mixin nameStyling {
+    color: $Dark-grayish-cyan;
+    font-weight: bold;
+    font-size: 0.75rem;
+    letter-spacing: 0px;
+}
+
+@mixin tipPercent {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@mixin noInput {
+    color: $error-red;
+    font-weight: bold;
+    font-size: 0.75rem;
+    letter-spacing: 0px;
+}
+
+body {
+    background-color: hsl(185, 41%, 84%);
+    font-family: 'Space Mono', monospace;
+}
+
+h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.first-line {
+    display: inline;
+}
+
+.second-line {
+    display: inline;
+}
+
+#app-name {
+    @include center();
+    margin: 53px 0px 0px 0px;
+    color: $Very-dark-cyan;
+    text-align: center;
+    letter-spacing: .5rem;
+    font-size: .75rem
+}
+
+#calculator {
+    display: flex;
+    flex-direction: row;
+    width: 50vw;
+    height: 55vh;
+    border-radius: 20px;
+    background-color: $White;
+    margin: 50px 0px 70px 380px;
+    padding: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.error-class {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#error1 {
+    @include noInput();
+    margin-top: 15px;
+}
+
+#error2 {
+    @include noInput();
+    margin-top: 32px;
+}
+
+.input-wrapper {
+    position: relative;
+    margin: 8px 0px 0px 22px;
+}
+
+.symbol {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 1.25rem;
+    color: $Grayish-cyan;
+    pointer-events: none;
+}
+
+input[type="number"] {
+    border: none;
+    padding: 5px 5px 5px 25px;
+    border-radius: 4px;
+    font-size: 1.25rem;
+    background-color: $Very-Light-Grayish-cyan;
+    text-align: right;
+    outline: none;
+    color: $Very-dark-cyan;
+    font-weight: bold;
+    caret-color: $Cyan;
+}
+
+
+input[type="number"]:focus {
+    border: 2px solid $Strong-cyan;
+    color: $Very-dark-cyan;
+}
+
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#bill-amt {
+    @include nameStyling();
+    margin: 16px 0px 0px 22px;
+
+}
+
+#bill-amount1 {
+    height: 5.042vh;
+    width: 19.53125vw;
+    text-align: right;
+    cursor: pointer;
+}
+
+#bill-amount1::placeholder {
+    color: $Grayish-cyan;
+}
+
+
+#tip-percnt {
+    @include nameStyling();
+    margin: 34px 0px 0px 22px;
+}
+
+#tip-percent-section {
+    display: flex;
+    flex-direction: column;
+}
+
+#tip-percent-1 {
+    @include tipPercent();
+}
+
+// #tip-percent-2 {
+//     @include tipPercent();
+// }
+
+.percent {
+    width: 5.598vw;
+    height: 5.042vh;
+    background-color: $Very-dark-cyan;
+    margin: 13px 0px 0px 22px;
+    border-radius: 4px;
+    text-align: center;
+    color: $White;
+    font-weight: bold;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.percent:hover {
+    color: $Very-dark-cyan;
+    background-color: $Cyan;
+}
+
+.selectedTipBtn {
+    background-color: $Strong-cyan;
+    color: $Very-dark-cyan;
+}
+
+#customPercnt {
+    width: 5.598vw;
+    height: 5.042vh;
+    margin: 13px 0px 0px 22px;
+    border-radius: 4px;
+    color: $Very-dark-cyan;
+    font-weight: bold;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#customPercnt::placeholder {
+    color: $Grayish-cyan;
+    font-size: 1.20rem;
+}
+
+#numPeople {
+    @include nameStyling();
+    margin: 34px 0px 0px 22px;
+}
+
+#peopleNumber {
+    height: 5.042vh;
+    width: 19.53125vw;
+    text-align: right;
+    cursor: pointer;
+}
+
+#peopleNumber::placeholder {
+    color: $Grayish-cyan;
+}
+
+#calculation {
+    width: 350px;
+    height: 340px;
+    background-color: $Very-dark-cyan;
+    margin-left: 50px;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+#tip-amt-perPerson {
+    display: flex;
+    flex-direction: row;
+
+}
+
+#tip-amt-person {
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.first-line1 {
+    display: inline;
+    color: $White;
+    font-size: 0.75rem;
+    margin: 47px 0px 0px 39px;
+}
+
+.second-line1 {
+    display: inline;
+    @include nameStyling();
+    margin: 0px 0px 0px 22px;
+}
+
+#amount {
+    font-size: 2.5rem;
+    margin: 34px 0px 0px 70px;
+    color: $Strong-cyan;
+    font-weight: bold;
+    justify-content: right;
+}
+
+#total-amt-perPerson {
+    display: flex;
+    flex-direction: row;
+}
+
+#total-amt-person {
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 0px 0px 17px;
+    justify-content: right;
+}
+
+.first-line2 {
+    display: inline;
+    color: $White;
+    font-size: 0.75rem;
+    margin: 47px 0px 0px 24px;
+}
+
+.second-line2 {
+    display: inline;
+    @include nameStyling();
+    margin: 0px 0px 0px 8px;
+}
+
+#totalAmount {
+    font-size: 2.5rem;
+    margin: 34px 0px 0px 86px;
+    color: $Strong-cyan;
+    font-weight: bold;
+}
+
+.center-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#button {
+    width: 276px;
+    padding: 10px 20px;
+    background-color: $dark-cyan;
+    color: $Cyan;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 75px 0px 0px 4px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#button:hover {
+    background-color: $Cyan;
+    color: $Very-dark-cyan;
+}
+
+// Media Queries
+
+
+@media screen and (min-width: 365px) and (max-width: 667px) {
+    #calculator {
+        flex-direction: column;
+        margin: 32px 0px 26px 0px;
+        width: 100vw;
+        height: 107vh
+    }
+
+    #bill-amt {
+        font-size: 0.8rem;
+    }
+    #bill-amount1 {
+        height: 6vh;
+        width: 77.53125vw;
+        text-align: right;
+        cursor: pointer;
+    }
+    .percent{
+        width: 33.598vw;
+        height: 5.8vh; 
+        padding: 7px 0px 0px 0px;
+    }
+    #customPercnt {
+        width: 33.598vw;
+        height: 5.8vh;
+        margin: 13px 0px 0px 22px;
+        padding: 0px 0px 0px 0px;
+        text-align: center;
+    }
+    #peopleNumber {
+        height: 6vh;
+        width: 77.53125vw;
+    }
+    #calculation {
+        width: 309px;
+        height: 223px;
+        margin-left: 13px;
+        margin-top: 32px;
+        border-radius: 10px;
+    }
+    #tip-percent-1 {
+    margin: 0px 0px 0px 0px ;
+    }
+    .first-line1 {
+        font-size: 0.77rem;
+        margin: 33px 0px 0px 18px;
+        width: 87px;
+    }
+    
+    .second-line1 {
+        margin: 0px 0px 0px -15px;
+    }
+    #amount {
+        font-size: 1.9rem;
+        margin: 23px 0px 0px 81px;
+        padding-right: 11px;
+    }
+    .first-line2 {
+        font-size: 0.77rem;
+        margin: 29px 0px 0px 1px;
+    }
+    
+    .second-line2 {
+        margin: -3px 0px 0px -15px;
+    }
+    #totalAmount {
+        font-size: 1.9rem;
+        margin: 23px 0px 0px 101px;
+        padding-right: 11px;
+    }
+    #button {
+        width: 211px;
+        margin: 23px 0px 0px 4px;
+    }
+    #tip-amt-person {
+        letter-spacing: 1px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .attribution {
+        font-size: 12px;
+        text-align: center;
+        font-weight: bold;
+        color: black;
+        margin-bottom: 15px;
+        
+      }
+  
+      .attribution a {
+        text-decoration: none;
+        color:hsl(183, 100%, 15%);
+      }
+
+}
