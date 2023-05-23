@@ -5,7 +5,8 @@ let amtTipPerPerson = document.getElementById('amount');
 let totalAmtTipPerPerson = document.getElementById('totalAmount');
 let amtError = document.getElementById("error1");
 let peopleError = document.getElementById("error2");
-let billAmt;
+let amtErrorField=document.getElementById("bill-amount1");
+let peopleErrorField=document.getElementById("peopleNumber");
 let btnTip = false;
 let numberInputTip = false;
 let selectedTip;
@@ -40,7 +41,6 @@ customPercentInput.addEventListener('input', function () {
 
 
 function calculateBill() {
-
     if (btn.innerHTML === "CALCULATE") {
         billAmt = parseFloat(document.getElementById("bill-amount1").value);
         let numberOfPeople = parseFloat(document.getElementById("peopleNumber").value);
@@ -63,8 +63,9 @@ function calculateBill() {
         totalTipPerPerson = parseFloat(totalAmt / numberOfPeople).toFixed(2);
         totalAmtTipPerPerson.innerHTML = "$" + totalTipPerPerson;
         btn.innerHTML = "RESET"
-
         checkData();
+
+
 
     } else if (btn.innerHTML === "RESET") {
         document.getElementById("bill-amount1").value = "";
@@ -78,6 +79,8 @@ function calculateBill() {
         btn.innerHTML = "CALCULATE";
         amtError.classList.add("hidden");
         peopleError.classList.add("hidden");
+        amtErrorField.style.borderColor='hsl(0, 0%, 100%)';
+        peopleErrorField.style.borderColor='hsl(0, 0%, 100%)';
 
     }
 }
@@ -88,21 +91,36 @@ function checkData() {
     if(document.getElementById("bill-amount1").value ==="" && document.getElementById("peopleNumber").value ===""){
         amtError.classList.remove("hidden");
         peopleError.classList.remove("hidden");
+        amtErrorField.style.borderColor='hsl(10, 50%, 63.9%)';
+        peopleErrorField.style.borderColor='hsl(10, 50%, 63.9%)';
         amtTipPerPerson.innerHTML = "$0.00";
         totalAmtTipPerPerson.innerHTML = "$0.00";
+        btn.innerHTML = "CALCULATE";
 
     }
     else if(document.getElementById("bill-amount1").value !=="" && document.getElementById("peopleNumber").value ===""){
         amtError.classList.add("hidden");
         peopleError.classList.remove("hidden");
+        peopleErrorField.style.borderColor='hsl(10, 50%, 63.9%)';
         amtTipPerPerson.innerHTML = "$0.00";
         totalAmtTipPerPerson.innerHTML = "$0.00";
+        btn.innerHTML = "CALCULATE";
     }
     else if(document.getElementById("bill-amount1").value ==="" && document.getElementById("peopleNumber").value !==""){
         amtError.classList.remove("hidden");
         peopleError.classList.add("hidden");
+        amtErrorField.style.borderColor='hsl(10, 50%, 63.9%)';
         amtTipPerPerson.innerHTML = "$0.00";
         totalAmtTipPerPerson.innerHTML = "$0.00";
+        btn.innerHTML = "CALCULATE";
+    }
+    else{
+        amtError.classList.add("hidden");
+        peopleError.classList.add("hidden");
+        amtErrorField.style.borderColor='hsl(0, 0%, 100%)';
+        peopleErrorField.style.borderColor='hsl(0, 0%, 100%)';
+        btn.innerHTML = "RESET";
+
     }
 
 }
