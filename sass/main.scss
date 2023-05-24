@@ -248,6 +248,7 @@ input::-webkit-inner-spin-button {
 }
 
 #calculation {
+    padding: 0vh 0vw 0vh 0vw;
     width: 350px;
     height: 340px;
     background-color: $Very-dark-cyan;
@@ -284,7 +285,7 @@ input::-webkit-inner-spin-button {
 
 #amount {
     font-size: 2.5rem;
-    margin: 34px 0px 0px 70px;
+    margin: -6vh 0vw 0vh 11vw;
     color: $Strong-cyan;
     font-weight: bold;
     justify-content: right;
@@ -319,7 +320,7 @@ input::-webkit-inner-spin-button {
 
 #totalAmount {
     font-size: 2.5rem;
-    margin: 34px 0px 0px 86px;
+    margin: -6vh 0vw 0vh 9.5vw;
     color: $Strong-cyan;
     font-weight: bold;
 }
@@ -415,13 +416,13 @@ input::-webkit-inner-spin-button {
 
     #amount {
         font-size: 1.9rem;
-        margin: -7vh 0vw 0vh 57vw;
+        margin: -7vh 9vw 0vh 44vw;
         padding-right: 11px;
     }
 
     #totalAmount {
         font-size: 1.9rem;
-        margin: -6vh 0vw 0vh 57vw;
+        margin: -6vh 13vw 0vh 40vw;
         padding-right: 11px;
     }
 
@@ -510,13 +511,13 @@ input::-webkit-inner-spin-button {
 
     #amount {
         font-size: 2.1rem;
-        margin: -7vh 0vw 0vh 61vw;
+        margin: -7vh 0vw 0vh 55vw;
         padding-right: 11px;
     }
 
     #totalAmount {
         font-size: 2.1rem;
-        margin: 4vh 0vw 0vh 39vw;
+        margin: 4vh 0vw 0vh 25vw;
         padding-right: 11px;
     }
 
@@ -530,7 +531,7 @@ input::-webkit-inner-spin-button {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-left: 0vw;
+        margin-left: 4vw;
     }
 
 }
@@ -540,7 +541,7 @@ input::-webkit-inner-spin-button {
         flex-direction: column;
         margin: 32px 0px 26px 0px;
         width: 100vw;
-        height: 107vh;
+        height: 109vh;
     }
 
     #bill-amt {
@@ -583,7 +584,7 @@ input::-webkit-inner-spin-button {
 
     #calculation {
         width: 90.11vw;
-        height: 228px;
+        height: 235px;
         margin-left: 2vw;
         margin-top: 32px;
         border-radius: 10px;
@@ -605,13 +606,13 @@ input::-webkit-inner-spin-button {
 
     #amount {
         font-size: 2.1rem;
-        margin: -7vh 0vw 0vh 65vw;
+        margin: -7vh 14vw 0vh 53vw;
         padding-right: 11px;
     }
 
     #totalAmount {
         font-size: 2.1rem;
-        margin: 4vh 0vw 0vh 46vw;
+        margin: -6vh 14vw 0vh 50vw;
         padding-right: 11px;
     }
 
@@ -625,7 +626,7 @@ input::-webkit-inner-spin-button {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-left: 1vw;
+        margin-left: 4vw;
     }
 
 }
@@ -635,7 +636,7 @@ input::-webkit-inner-spin-button {
     #calculator {
         flex-direction: row;
         margin: 6vh 20vw 8vh 15vh;
-        width: 77vw;
+        width:83vw;
         height: 60vh;
     }
 
@@ -670,9 +671,9 @@ input::-webkit-inner-spin-button {
     }
 
     #calculation {
-        width: 34.11vw;
+        width: 41.11vw;
         height: 52vh;
-        margin-left: 4vw;
+        margin-left: 0vw;
         margin-top: 1vh;
         border-radius: 10px;
     }
@@ -695,19 +696,19 @@ input::-webkit-inner-spin-button {
 
     #amount {
         font-size: 2.12rem;
-        margin: -7vh 0vw 0vh 19.5vw;
+        margin: -7vh 0vw 0vh 21.5vw;
         padding-right: 11px;
     }
 
     #totalAmount {
         font-size: 2.12rem;
-        margin: -8vh 0vw 0vh 19.5vw;
+        margin: -6vh 0vw 0vh 18.5vw;
         padding-right: 11px;
     }
 
     #button {
         width: 29vw;
-        margin: 19vh 0vw 0vh 0vw;
+        margin: 17vh 0vw 0vh 0vw;
     }
 
     #tip-amt-person {
@@ -792,13 +793,13 @@ input::-webkit-inner-spin-button {
 
     #amount {
         font-size: 2.2rem;
-        margin: -7vh 0vw 0vh 21vw;
+        margin: -7vh 0vw 0vh 18vw;
         padding-right: 11px;
     }
 
     #totalAmount {
         font-size: 2.2rem;
-        margin: -8vh 0vw 0vh 21vw;
+        margin: -8vh 0vw 0vh 16vw;
         padding-right: 11px;
     }
 
@@ -887,13 +888,13 @@ input::-webkit-inner-spin-button {
 
     #amount {
         font-size: 2.4rem;
-        margin: -7vh 0vw 0vh 21vw;
+        margin: -7vh 0vw 0vh 19vw;
         padding-right: 11px;
     }
 
     #totalAmount {
         font-size: 2.4rem;
-        margin: -7vh 0vw 0vh 21vw;
+        margin: -7vh 0vw 0vh 17vw;
         padding-right: 11px;
     }
 
@@ -911,11 +912,11 @@ input::-webkit-inner-spin-button {
     }
 }
 
-@media screen and (min-width: 1201px) and (max-width: 1518px) {
+@media screen and (min-width: 1201px) and (max-width: 1476px) {
     #calculator {
         flex-direction: row;
         margin: 6vh 20vw 8vh 33vh;
-        width: 64vw;
+        width: 66vw;
         height: 60vh;
     }
 
@@ -948,7 +949,92 @@ input::-webkit-inner-spin-button {
     }
 
     #calculation {
-        width: 28.11vw;
+        width: 30.11vw;
+        height: 52vh;
+        margin-left: 4vw;
+        margin-top: 1vh;
+        border-radius: 10px;
+    }
+
+    #tip-percent-1 {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0vh 0vw 0vh 0vw;
+    }
+
+    .first-line1 {
+        font-size: 0.77rem;
+        margin: 33px 0px 0px 18px;
+        width: 87px;
+    }
+
+    .second-line1 {
+        margin: 0px 0px 0px -15px;
+    }
+
+    #amount {
+        font-size: 2.5rem;
+        margin: -7vh 0vw 0vh 15vw;
+        padding-right: 11px;
+    }
+
+    #totalAmount {
+        font-size: 2.5rem;
+        margin: -7vh -5vw 0vh 13vw;
+        padding-right: 11px;
+    }
+
+    #button {
+        width: 24vw;
+        margin: 15vh 0vw 0vh 0vw;
+    }
+
+    #tip-amt-person {
+        letter-spacing: 1px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 1vw;
+    }
+}
+@media screen and (min-width: 1477px) and (max-width: 1524px) {
+    #calculator {
+        flex-direction: row;
+        margin: 6vh 20vw 8vh 33vh;
+        width: 66vw;
+        height: 60vh;
+    }
+
+    #bill-amt {
+        font-size: 0.8rem;
+    }
+
+    #bill-amount1 {
+        height: 6vh;
+        width: 27.53125vw;
+    }
+
+    .percent {
+        width: 7.68vw;
+        height: 5.8vh;
+        padding: 7px 0px 0px 0px;
+    }
+
+    #customPercnt {
+        width: 7.693vw;
+        height: 5.8vh;
+        margin: 13px 0px 0px 22px;
+        padding: 0px 0px 0px 0px;
+        text-align: center;
+    }
+
+    #peopleNumber {
+        height: 6vh;
+        width: 27.53125vw;
+    }
+
+    #calculation {
+        width: 30.11vw;
         height: 52vh;
         margin-left: 4vw;
         margin-top: 1vh;
@@ -979,7 +1065,7 @@ input::-webkit-inner-spin-button {
 
     #totalAmount {
         font-size: 2.5rem;
-        margin: -7vh -5vw 0vh 17vw;
+        margin: 4vh -5vw 0vh 7.5vw;
         padding-right: 11px;
     }
 
