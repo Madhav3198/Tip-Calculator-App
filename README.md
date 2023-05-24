@@ -19,7 +19,7 @@ I have added a screenshots of the desktop screen and mobile screen from 375px to
 ### Links
 
 - Solution URL: (https://github.com/Madhav3198/Tip-Calculator-App)
-- Live Site URL: (https://unrivaled-sprinkles-4e12d2.netlify.app/)
+- Live Site URL: (https://kaleidoscopic-croquembouche-3c888e.netlify.app/)
 
 
 ### Built with
