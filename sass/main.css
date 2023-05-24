@@ -280,7 +280,7 @@ input::-webkit-inner-spin-button {
 
 #total-amt-perPerson {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 #total-amt-person {
@@ -341,7 +341,7 @@ input::-webkit-inner-spin-button {
   color: hsl(183, 100%, 15%);
 }
 
-@media screen and (min-width: 365px) and (max-width: 667px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   #calculator {
     flex-direction: column;
     margin: 32px 0px 26px 0px;
@@ -374,14 +374,14 @@ input::-webkit-inner-spin-button {
     width: 77.53125vw;
   }
   #calculation {
-    width: 309px;
-    height: 223px;
-    margin-left: 13px;
+    width: 90.11vw;
+    height: 228px;
+    margin-left: 0vw;
     margin-top: 32px;
     border-radius: 10px;
   }
   #tip-percent-1 {
-    margin: 0px 0px 0px 0px;
+    margin: 0vh 0vw 0vh 2vw;
   }
   .first-line1 {
     font-size: 0.77rem;
@@ -393,40 +393,485 @@ input::-webkit-inner-spin-button {
   }
   #amount {
     font-size: 1.9rem;
-    margin: 23px 0px 0px 81px;
+    margin: -7vh 0vw 0vh 57vw;
     padding-right: 11px;
-  }
-  .first-line2 {
-    font-size: 0.77rem;
-    margin: 29px 0px 0px 1px;
-  }
-  .second-line2 {
-    margin: -3px 0px 0px -15px;
   }
   #totalAmount {
     font-size: 1.9rem;
-    margin: 23px 0px 0px 101px;
+    margin: -6vh 0vw 0vh 57vw;
     padding-right: 11px;
   }
   #button {
-    width: 211px;
-    margin: 23px 0px 0px 4px;
+    width: 60vw;
+    margin: 23px 0px 0px 3px;
   }
   #tip-amt-person {
     letter-spacing: 1px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-left: 0vw;
   }
-  .attribution {
-    font-size: 12px;
+}
+@media screen and (min-width: 481px) and (max-width: 582px) {
+  #calculator {
+    flex-direction: column;
+    margin: 32px 0px 26px 0px;
+    width: 100vw;
+    height: 107vh;
+  }
+  #bill-amt {
+    font-size: 0.8rem;
+  }
+  #bill-amount1 {
+    height: 6vh;
+    width: 80.53125vw;
+    text-align: right;
+    cursor: pointer;
+  }
+  #error1 {
+    margin: 2vh 8vw 0vh 0vw;
+  }
+  #error2 {
+    margin: 5vh 8vw 0vh 0vw;
+  }
+  .percent {
+    width: 33.598vw;
+    height: 5.8vh;
+    padding: 7px 0px 0px 0px;
+  }
+  #customPercnt {
+    width: 33.598vw;
+    height: 5.8vh;
+    margin: 13px 0px 0px 22px;
+    padding: 0px 0px 0px 0px;
     text-align: center;
-    font-weight: bold;
-    color: black;
-    margin-bottom: 15px;
   }
-  .attribution a {
-    text-decoration: none;
-    color: hsl(183, 100%, 15%);
+  #peopleNumber {
+    height: 6vh;
+    width: 80.53125vw;
+  }
+  #calculation {
+    width: 90.11vw;
+    height: 228px;
+    margin-left: 1vw;
+    margin-top: 32px;
+    border-radius: 10px;
+  }
+  #tip-percent-1 {
+    margin: 0vh 0vw 0vh 4vw;
+  }
+  .first-line1 {
+    font-size: 0.77rem;
+    margin: 33px 0px 0px 18px;
+    width: 87px;
+  }
+  .second-line1 {
+    margin: 0px 0px 0px -15px;
+  }
+  #amount {
+    font-size: 2.1rem;
+    margin: -7vh 0vw 0vh 61vw;
+    padding-right: 11px;
+  }
+  #totalAmount {
+    font-size: 2.1rem;
+    margin: 4vh 0vw 0vh 39vw;
+    padding-right: 11px;
+  }
+  #button {
+    width: 60vw;
+    margin: 23px 0px 0px 3px;
+  }
+  #tip-amt-person {
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0vw;
+  }
+}
+@media screen and (min-width: 582px) and (max-width: 769px) {
+  #calculator {
+    flex-direction: column;
+    margin: 32px 0px 26px 0px;
+    width: 100vw;
+    height: 107vh;
+  }
+  #bill-amt {
+    font-size: 0.8rem;
+  }
+  #bill-amount1 {
+    height: 6vh;
+    width: 82.53125vw;
+    text-align: right;
+    cursor: pointer;
+  }
+  #error1 {
+    margin: 2vh 8vw 0vh 0vw;
+  }
+  #error2 {
+    margin: 5vh 8vw 0vh 0vw;
+  }
+  .percent {
+    width: 33.598vw;
+    height: 5.8vh;
+    padding: 7px 0px 0px 0px;
+  }
+  #customPercnt {
+    width: 33.598vw;
+    height: 5.8vh;
+    margin: 13px 0px 0px 22px;
+    padding: 0px 0px 0px 0px;
+    text-align: center;
+  }
+  #peopleNumber {
+    height: 6vh;
+    width: 82.53125vw;
+  }
+  #calculation {
+    width: 90.11vw;
+    height: 228px;
+    margin-left: 2vw;
+    margin-top: 32px;
+    border-radius: 10px;
+  }
+  #tip-percent-1 {
+    margin: 0vh 0vw 0vh 4vw;
+  }
+  .first-line1 {
+    font-size: 0.77rem;
+    margin: 33px 0px 0px 18px;
+    width: 87px;
+  }
+  .second-line1 {
+    margin: 0px 0px 0px -15px;
+  }
+  #amount {
+    font-size: 2.1rem;
+    margin: -7vh 0vw 0vh 65vw;
+    padding-right: 11px;
+  }
+  #totalAmount {
+    font-size: 2.1rem;
+    margin: 4vh 0vw 0vh 46vw;
+    padding-right: 11px;
+  }
+  #button {
+    width: 60vw;
+    margin: 23px 0px 0px 3px;
+  }
+  #tip-amt-person {
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1vw;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  #calculator {
+    flex-direction: row;
+    margin: 6vh 20vw 8vh 15vh;
+    width: 77vw;
+    height: 60vh;
+  }
+  #bill-amt {
+    font-size: 0.8rem;
+  }
+  #bill-amount1 {
+    height: 6vh;
+    width: 31.53125vw;
+    text-align: right;
+    cursor: pointer;
+  }
+  .percent {
+    width: 8.3vw;
+    height: 5.8vh;
+    padding: 7px 0px 0px 0px;
+  }
+  #customPercnt {
+    width: 8.3vw;
+    height: 5.8vh;
+    margin: 13px 0px 0px 22px;
+    padding: 0px 0px 0px 0px;
+    text-align: center;
+  }
+  #peopleNumber {
+    height: 6vh;
+    width: 31.53125vw;
+  }
+  #calculation {
+    width: 34.11vw;
+    height: 52vh;
+    margin-left: 4vw;
+    margin-top: 1vh;
+    border-radius: 10px;
+  }
+  #tip-percent-1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0vh 0vw 0vh 0vw;
+  }
+  .first-line1 {
+    font-size: 0.77rem;
+    margin: 33px 0px 0px 18px;
+    width: 87px;
+  }
+  .second-line1 {
+    margin: 0px 0px 0px -15px;
+  }
+  #amount {
+    font-size: 2.12rem;
+    margin: -7vh 0vw 0vh 19.5vw;
+    padding-right: 11px;
+  }
+  #totalAmount {
+    font-size: 2.12rem;
+    margin: -8vh 0vw 0vh 19.5vw;
+    padding-right: 11px;
+  }
+  #button {
+    width: 29vw;
+    margin: 19vh 0vw 0vh 0vw;
+  }
+  #tip-amt-person {
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1vw;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1153px) {
+  #calculator {
+    flex-direction: row;
+    margin: 6vh 20vw 8vh 20vh;
+    width: 77vw;
+    height: 60vh;
+  }
+  #bill-amt {
+    font-size: 0.8rem;
+  }
+  #bill-amount1 {
+    height: 6vh;
+    width: 31.53125vw;
+    text-align: right;
+    cursor: pointer;
+  }
+  #error1 {
+    margin: 2vh 1vw 0vh 0vw;
+  }
+  #error2 {
+    margin: 5vh 1vw 0vh 0vw;
+  }
+  .percent {
+    width: 8.514vw;
+    height: 5.8vh;
+    padding: 7px 0px 0px 0px;
+  }
+  #customPercnt {
+    width: 8.514vw;
+    height: 5.8vh;
+    margin: 13px 0px 0px 22px;
+    padding: 0px 0px 0px 0px;
+    text-align: center;
+  }
+  #peopleNumber {
+    height: 6vh;
+    width: 31.53125vw;
+  }
+  #calculation {
+    width: 34.11vw;
+    height: 52vh;
+    margin-left: 4vw;
+    margin-top: 1vh;
+    border-radius: 10px;
+  }
+  #tip-percent-1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0vh 0vw 0vh 0vw;
+  }
+  .first-line1 {
+    font-size: 0.77rem;
+    margin: 33px 0px 0px 18px;
+    width: 87px;
+  }
+  .second-line1 {
+    margin: 0px 0px 0px -15px;
+  }
+  #amount {
+    font-size: 2.2rem;
+    margin: -7vh 0vw 0vh 21vw;
+    padding-right: 11px;
+  }
+  #totalAmount {
+    font-size: 2.2rem;
+    margin: -8vh 0vw 0vh 21vw;
+    padding-right: 11px;
+  }
+  #button {
+    width: 29vw;
+    margin: 19vh 0vw 0vh 0vw;
+  }
+  #tip-amt-person {
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1vw;
+  }
+}
+@media screen and (min-width: 1153px) and (max-width: 1200px) {
+  #calculator {
+    flex-direction: row;
+    margin: 6vh 20vw 8vh 20vh;
+    width: 77vw;
+    height: 60vh;
+  }
+  #bill-amt {
+    font-size: 0.8rem;
+  }
+  #bill-amount1 {
+    height: 6vh;
+    width: 31.53125vw;
+    text-align: right;
+    cursor: pointer;
+  }
+  #error1 {
+    margin: 2vh 2vw 0vh 0vw;
+  }
+  #error2 {
+    margin: 5vh 2vw 0vh 0vw;
+  }
+  .percent {
+    width: 8.514vw;
+    height: 5.8vh;
+    padding: 7px 0px 0px 0px;
+  }
+  #customPercnt {
+    width: 8.514vw;
+    height: 5.8vh;
+    margin: 13px 0px 0px 22px;
+    padding: 0px 0px 0px 0px;
+    text-align: center;
+  }
+  #peopleNumber {
+    height: 6vh;
+    width: 31.53125vw;
+  }
+  #calculation {
+    width: 34.11vw;
+    height: 52vh;
+    margin-left: 4vw;
+    margin-top: 1vh;
+    border-radius: 10px;
+  }
+  #tip-percent-1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0vh 0vw 0vh 0vw;
+  }
+  .first-line1 {
+    font-size: 0.77rem;
+    margin: 33px 0px 0px 18px;
+    width: 87px;
+  }
+  .second-line1 {
+    margin: 0px 0px 0px -15px;
+  }
+  #amount {
+    font-size: 2.4rem;
+    margin: -7vh 0vw 0vh 21vw;
+    padding-right: 11px;
+  }
+  #totalAmount {
+    font-size: 2.4rem;
+    margin: -7vh 0vw 0vh 21vw;
+    padding-right: 11px;
+  }
+  #button {
+    width: 29vw;
+    margin: 16vh 0vw 0vh 0vw;
+  }
+  #tip-amt-person {
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1vw;
+  }
+}
+@media screen and (min-width: 1201px) and (max-width: 1518px) {
+  #calculator {
+    flex-direction: row;
+    margin: 6vh 20vw 8vh 33vh;
+    width: 64vw;
+    height: 60vh;
+  }
+  #bill-amt {
+    font-size: 0.8rem;
+  }
+  #bill-amount1 {
+    height: 6vh;
+    width: 27.53125vw;
+  }
+  .percent {
+    width: 7.68vw;
+    height: 5.8vh;
+    padding: 7px 0px 0px 0px;
+  }
+  #customPercnt {
+    width: 7.693vw;
+    height: 5.8vh;
+    margin: 13px 0px 0px 22px;
+    padding: 0px 0px 0px 0px;
+    text-align: center;
+  }
+  #peopleNumber {
+    height: 6vh;
+    width: 27.53125vw;
+  }
+  #calculation {
+    width: 28.11vw;
+    height: 52vh;
+    margin-left: 4vw;
+    margin-top: 1vh;
+    border-radius: 10px;
+  }
+  #tip-percent-1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0vh 0vw 0vh 0vw;
+  }
+  .first-line1 {
+    font-size: 0.77rem;
+    margin: 33px 0px 0px 18px;
+    width: 87px;
+  }
+  .second-line1 {
+    margin: 0px 0px 0px -15px;
+  }
+  #amount {
+    font-size: 2.5rem;
+    margin: -7vh 0vw 0vh 17vw;
+    padding-right: 11px;
+  }
+  #totalAmount {
+    font-size: 2.5rem;
+    margin: -7vh -5vw 0vh 17vw;
+    padding-right: 11px;
+  }
+  #button {
+    width: 24vw;
+    margin: 15vh 0vw 0vh 0vw;
+  }
+  #tip-amt-person {
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1vw;
   }
 }/*# sourceMappingURL=main.css.map */
